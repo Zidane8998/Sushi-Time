@@ -13,7 +13,7 @@ public class SoundToggle extends AbstractAction{
 	public SoundToggle(GameWorld target){
 		super("Sound");
 		gw=target;
-		String dir="Sounds" + File.separator;
+		String dir="src" + File.separator + "a3" + File.separator + "Sounds" + File.separator;
 		String file="background.wav";
 		String path=dir+file;
 		background=new Sounds(path);

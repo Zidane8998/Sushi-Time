@@ -14,7 +14,7 @@ public class Scoop extends AbstractAction{
 	public Scoop(GameWorld target){
 		super("Scoop");
 		gw=target;
-		String dir="Sounds" + File.separator;
+		String dir="src" + File.separator + "a3" + File.separator + "Sounds" + File.separator;
 		String file="scoopNet.wav";
 		String path=dir+file;
 		scoopNet=new Sounds(path);

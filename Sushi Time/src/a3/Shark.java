@@ -11,7 +11,7 @@ public class Shark extends Animal{
 			private double newX;
 			private double newY;
 			private Point2D.Float newLoc = new Point2D.Float();
-			private Sounds sharkEatFish = new Sounds("Sounds/sharkEatFish.aif");
+			private Sounds sharkEatFish = new Sounds("src" + File.separator + "a3" + File.separator + "Sounds" + File.separator);
 			public Shark(GameWorld target){
 				super();
 				this.setSize(10);
@@ -22,7 +22,7 @@ public class Shark extends Animal{
 			}
 			//instantiate sounds
 			private void initSounds(){
-				String dir="Sounds" + File.separator;
+				String dir="src" + File.separator + "a3" + File.separator + "Sounds" + File.separator;
 				String file="sharkEatFish.aif";
 				String path=dir+file;
 				sharkEatFish=new Sounds(path);

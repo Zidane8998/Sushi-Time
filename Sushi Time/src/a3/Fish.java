@@ -49,12 +49,12 @@ public class Fish extends Animal{
 			}
 			//instantiate sounds
 			private void initSounds(){
-				String dir="Sounds" + File.separator;
+				String dir="src" + File.separator + "a3" + File.separator + "Sounds" + File.separator;
 				String file="fishMate.wav";
 				String path=dir+file;
 				fishMate=new Sounds(path);
 				
-				String dir2="Sounds" + File.separator;
+				String dir2="src" + File.separator + "a3" + File.separator + "Sounds" + File.separator;
 				String file2="fishEatFood.wav";
 				String path2=dir2+file2;
 				fishEatFood=new Sounds(path2);
