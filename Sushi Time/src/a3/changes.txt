@@ -1,0 +1,30 @@
+//implement GameWorldProxy correctly in Game/both views
+//fix GameCollection error with shark moving out of area deletion (IndexOutofBounds)
+//fix movement within panel (limit to current size?) (make default size bigger)
+//fix turn-around for fish
+//fix game ending if no fish
+//fix net should scoop food
+//add/subtract random neg/pos values to fish/shark movement
+//hard-code beginning number of fish
+//fix random add/subtraction of movement
+//add pause and reverse to menubar
+//pause should prevent all commands except Reverse (pass arraylist of all registered commands)
+//fix sound toggle from being greyed out by pause
+//add dialog box at end of game showing score
+//update "About"
+//fix scoop making sound when game sound off
+have views iterate through collection, not pass directly from gameworld
+
+//------------Graphics Implementation-------------------//
+//MapView must implement paintComponent() (extend graphics?)
+//update() in MapView must iterate through collection and have each object draw/redraw themselves
+//GameObjects must implement an IDrawable interface with method draw(Graphics g) to replace toString() method
+//Game must include timer to drive animation (20msec tick)
+//Game timer must call actionPerformed() for each clock tick, call "Tick" command and replacing "Tick Clock" button
+Game timer should pass an "elapsed time" value to move() method in Tick so objects move consistantly
+//draw sushibar
+
+//------------Collision Detection----------------------//
+//add collision of net with sushibar, have it update points
+//add sounds polymorphically
+//prevent fish/sharks/seaweed from spawning on sushibar
