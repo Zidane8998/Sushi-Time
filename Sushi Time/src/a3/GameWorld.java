@@ -18,7 +18,6 @@ public class GameWorld implements Observable{
 	public GameWorld(){}
 	@Override
 	public void notifyObservers(){
-		//System.out.println("Game state changed.  Notifying Observers...");
 		//update all observers in Observer list
 		for (Observer o : ol){
 			//iterate through GameCollection to avoid passing iterator to views
